@@ -1,13 +1,7 @@
-const inputName = document.getElementById('name-input');
-const outputName = document.getElementById('name-output');
+const nameInput = document.getElementById('name-input');
+const nameOutput = document.getElementById('name-output');
 
-inputName.addEventListener('input',   
- () => {
-  const inputValue = inputName.value.trim(); // Очищаємо значення від пробілів по краях
-
-  if (inputValue !== '') {
-    outputName.textContent = inputValue;
-  } else {
-    outputName.textContent = 'Anonymous';
-  }
+nameInput.addEventListener('input', () => {
+  const trimmedValue = nameInput.value.trim();
+  nameOutput.textContent = trimmedValue ? trimmedValue : 'Anonymous';
 });

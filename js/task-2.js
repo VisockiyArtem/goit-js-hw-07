@@ -25,3 +25,16 @@ const images = [
   }
 ];
 
+const gallery = document.querySelector('.gallery');
+const fragment = document.createDocumentFragment(); // Використовуємо фрагмент для оптимізації
+
+images.forEach(image => {
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    img.src = image.url;
+    img.alt = image.alt;
+    li.append(img);
+    fragment.append(li);
+});
+
+gallery.append(fragment); // Додаємо всі елементи в DOM за одну операцію
