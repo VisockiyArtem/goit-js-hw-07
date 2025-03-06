@@ -13,6 +13,29 @@ body {
   line-height: 1.5;
 }
 
+.go-it {
+  list-style: none;
+}
+
+.link-go-it {
+  border: #212121;
+background: #8ebfa7;
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 8px;
+      padding: 8px 16px;
+      width: 120px;
+      height: 40px;
+      text-decoration: none;
+}
+
+.go-it-list {
+  margin-bottom: 15px;
+}
+
 #categories {
   display: flex;
   align-items: flex-start;
